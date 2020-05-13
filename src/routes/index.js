@@ -1,0 +1,63 @@
+import {
+    ArticleList,
+    ArticleEdit,
+    Dashboard,
+    Settings,
+    Login,
+    NotFound,
+    Notifications,
+    NoAuth
+} from "../views"
+
+export const mainRoute = [
+    {
+        pathname:"/login",
+        component:Login
+    },
+    {
+        pathname:"/404",
+        component:NotFound
+    },
+]
+export const adminRoute = [
+    {
+        pathname:"/admin/dashboard",
+        component:Dashboard,
+        title:"仪表盘",
+        isNav:true,
+        type:"dashboard",
+        roles:["001","002","003"]
+    },
+    {
+        pathname:"/admin/article",
+        component:ArticleList,
+        exact:true,
+        title:"文章列表",
+        isNav:true,
+        type:"ordered-list",
+        roles:["001","002"]
+    },
+    {
+        pathname:"/admin/article/edit/:id",
+        component:ArticleEdit,
+        roles:["001","002"]
+    },
+    {
+        pathname:"/admin/noauth",
+        component:NoAuth,
+        roles:["001","002","003"]
+    },
+    {
+        pathname:"/admin/notifications",
+        component:Notifications,
+        roles:["001","002","003"]
+    },
+    {
+        pathname:"/admin/settings",
+        component:Settings,
+        title:"设置",
+        isNav:true,
+        type:"setting",
+        roles:["001"]
+    },
+]

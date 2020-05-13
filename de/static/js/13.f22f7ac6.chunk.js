@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-pro"]=this["webpackJsonpreact-pro"]||[]).push([[13],{1021:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return p}));var r=n(42),a=n(43),c=n(45),u=n(44),i=n(0),o=n.n(i),p=function(t){Object(c.a)(n,t);var e=Object(u.a)(n);function n(){return Object(r.a)(this,n),e.apply(this,arguments)}return Object(a.a)(n,[{key:"render",value:function(){return o.a.createElement("div",null,"\u767b\u5f55")}}]),n}(i.Component)}}]);
+//# sourceMappingURL=13.f22f7ac6.chunk.js.map
